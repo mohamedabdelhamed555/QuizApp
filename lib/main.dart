@@ -53,20 +53,24 @@ class quiz_app extends StatelessWidget {
                 Spacer(
                   flex: 1,
                 ),
-                Container(
-                  width: 250,
-                  height: 50,
-                  child: Card(
-                      color: Colors.green,
-                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                      child: Center(
-                        child: Text(
-                          "start",
-                          style: TextStyle(fontSize: 24, color: Colors.white),
-                        ),
-                      )),
-                ),
               ],
+            ),
+          ),
+          floatingActionButton: Padding(
+            padding: const EdgeInsets.only(right: 12, left: 12),
+            child: Container(
+              color: Colors.green,
+              width: 305,
+              height: 30,
+              child: FloatingActionButton(
+                  backgroundColor: Colors.green,
+                  shape:
+                      BeveledRectangleBorder(borderRadius: BorderRadius.zero),
+                  onPressed: () {},
+                  child: Text(
+                    "start",
+                    style: TextStyle(fontSize: 20, color: Colors.white),
+                  )),
             ),
           ),
         ));
