@@ -24,8 +24,8 @@ class loginScreen extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(20),
-                      topRight: Radius.circular(20))),
+                      topLeft: Radius.circular(40),
+                      topRight: Radius.circular(40))),
               child: Column(
                 children: [
                   Text(
@@ -74,16 +74,15 @@ class loginScreen extends StatelessWidget {
                     child: Row(
                       children: [
                         Text("New to quizz app?"),
-                        ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.white,
-                              side: BorderSide(color: Colors.white),
-                            ),
-                            onPressed: () {},
-                            child: Text(
-                              "register",
-                              style: TextStyle(color: Colors.green),
-                            ))
+                        Padding(
+                          padding: const EdgeInsets.only(left: 6),
+                          child: TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                "register",
+                                style: TextStyle(color: Colors.green),
+                              )),
+                        )
                       ],
                     ),
                   ),
@@ -136,11 +135,7 @@ class loginScreen extends StatelessWidget {
                         SizedBox(
                           width: MediaQuery.of(context).size.width * 0.4,
                         ),
-                        ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.white,
-                              side: BorderSide(color: Colors.white),
-                            ),
+                        TextButton(
                             onPressed: () {},
                             child: Text(
                               "forget password?",
