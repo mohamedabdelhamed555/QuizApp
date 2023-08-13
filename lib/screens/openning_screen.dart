@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:mohamed_iti823/screens/login_screen.dart';
 
 class openningScreen extends StatelessWidget {
   const openningScreen({super.key});
@@ -6,7 +8,9 @@ class openningScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.black),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+      ),
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
@@ -51,16 +55,23 @@ class openningScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: Padding(
-        padding: const EdgeInsets.only(right: 12, left: 12),
+        padding: const EdgeInsets.only(right: 20, left: 12),
         child: Container(
           color: Colors.green,
-          width: 305,
+          width: 420,
           height: 30,
           child: FloatingActionButton(
               backgroundColor: Colors.green,
               shape:
                   const BeveledRectangleBorder(borderRadius: BorderRadius.zero),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute<void>(
+                    builder: (BuildContext context) => const loginScreen(),
+                  ),
+                );
+              },
               child: const Text(
                 "start",
                 style: TextStyle(fontSize: 20, color: Colors.white),
