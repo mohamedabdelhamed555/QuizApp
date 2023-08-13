@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mohamed_iti823/screens/cat_screen.dart';
 
 class loginScreen extends StatelessWidget {
   const loginScreen({super.key});
@@ -55,8 +56,8 @@ class loginScreen extends StatelessWidget {
                     child: TextField(
                       decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                              width: 0.5, color: Colors.black), //<-- SEE HERE
+                          borderSide:
+                              BorderSide(color: Colors.black), //<-- SEE HERE
                           borderRadius: BorderRadius.circular(50.0),
                         ),
                         labelText: "password",
@@ -69,22 +70,20 @@ class loginScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 290),
-                    child: Row(
-                      children: [
-                        Text("New to quizz app?"),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 6),
-                          child: TextButton(
-                              onPressed: () {},
-                              child: Text(
-                                "register",
-                                style: TextStyle(color: Colors.green),
-                              )),
-                        )
-                      ],
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text("New to quizz app?"),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 6),
+                        child: TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              "register",
+                              style: TextStyle(color: Colors.green),
+                            )),
+                      )
+                    ],
                   ),
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.1,
@@ -97,7 +96,14 @@ class loginScreen extends StatelessWidget {
                       backgroundColor: Colors.green,
                       shape: StadiumBorder(),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) => CatScreen(),
+                        ),
+                      );
+                    },
                     child: Text("Login"),
                   ),
                   SizedBox(
@@ -105,6 +111,7 @@ class loginScreen extends StatelessWidget {
                   ),
                   Icon(
                     Icons.fingerprint,
+                    color: Colors.blue,
                     size: 50,
                   ),
                   SizedBox(
