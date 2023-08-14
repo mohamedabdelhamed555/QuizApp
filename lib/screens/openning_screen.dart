@@ -9,6 +9,7 @@ class openningScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: true,
         backgroundColor: Colors.black,
       ),
       body: Container(
@@ -60,22 +61,27 @@ class openningScreen extends StatelessWidget {
           color: Colors.green,
           width: 420,
           height: 30,
-          child: FloatingActionButton(
-              backgroundColor: Colors.green,
-              shape:
-                  const BeveledRectangleBorder(borderRadius: BorderRadius.zero),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute<void>(
-                    builder: (BuildContext context) => const loginScreen(),
-                  ),
-                );
-              },
-              child: const Text(
-                "start",
-                style: TextStyle(fontSize: 20, color: Colors.white),
-              )),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              FloatingActionButton(
+                  backgroundColor: Colors.green,
+                  shape: const BeveledRectangleBorder(
+                      borderRadius: BorderRadius.zero),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute<void>(
+                        builder: (BuildContext context) => const loginScreen(),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    "start",
+                    style: TextStyle(fontSize: 20, color: Colors.white),
+                  )),
+            ],
+          ),
         ),
       ),
     );

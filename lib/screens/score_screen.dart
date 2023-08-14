@@ -43,15 +43,15 @@ class ScoreScreen extends StatelessWidget {
                   Color.fromARGB(255, 130, 11, 84)),
             ),
             onPressed: () {
-              Navigator.push(
+              Navigator.pushAndRemoveUntil(
                 context,
-                MaterialPageRoute<void>(
-                  builder: (BuildContext context) => const openningScreen(),
-                ),
+                MaterialPageRoute(
+                    builder: (BuildContext context) => openningScreen()),
+                (Route<dynamic> route) => false,
               );
             },
             child: Text("Reset quiz"),
-          )
+          ),
         ],
       ),
     );

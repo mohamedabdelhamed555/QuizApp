@@ -8,7 +8,7 @@ class loginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.green,
-      body: Column(
+      body: ListView(
         children: [
           Container(
             height: 200,
@@ -130,18 +130,23 @@ class loginScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(12),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Checkbox(
-                          value: true,
-                          onChanged: (value) => true,
+                        Row(
+                          children: [
+                            Checkbox(
+                              value: true,
+                              onChanged: (value) => true,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8),
+                              child: Text("Remember me"),
+                            ),
+                          ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 8),
-                          child: Text("Remember me"),
-                        ),
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.4,
-                        ),
+                        // SizedBox(
+                        //   width: MediaQuery.of(context).size.width * 0.1,
+                        // ),
                         TextButton(
                             onPressed: () {},
                             child: Text(
@@ -150,7 +155,7 @@ class loginScreen extends StatelessWidget {
                             ))
                       ],
                     ),
-                  )
+                  ),
                 ],
               ))
         ],
