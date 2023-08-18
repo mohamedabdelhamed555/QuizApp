@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:mohamed_iti823/Widgets/Category_Container.dart';
 
 class CatScreen extends StatelessWidget {

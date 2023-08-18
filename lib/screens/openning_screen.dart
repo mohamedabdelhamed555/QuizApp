@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:mohamed_iti823/screens/login_screen.dart';
 
 class openningScreen extends StatelessWidget {
@@ -72,7 +71,7 @@ class openningScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute<void>(
-                        builder: (BuildContext context) => loginScreen(),
+                        builder: (BuildContext context) => LoginScreen(),
                       ),
                     );
                   },

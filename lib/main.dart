@@ -13,7 +13,7 @@ class quiz_app extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: loginScreen(),
+      home: LoginScreen(),
     );
   }
 }
