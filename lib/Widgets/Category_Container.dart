@@ -1,10 +1,12 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:mohamed_iti823/screens/quiz_screen.dart';
 
 class CategoryContainer extends StatelessWidget {
   final int? index;
   CategoryContainer({super.key, this.index});
-  List quizzText = ["sport quiz", "cemecal quiz", "network quiz"];
+  List quizzText = ["sport quiz", "cemecal quiz", "history quiz"];
   List quizzColor = [Colors.blue, Colors.green, Colors.red];
   @override
   Widget build(BuildContext context) {
