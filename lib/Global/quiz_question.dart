@@ -306,5 +306,295 @@ List dataList = [
         ]
       },
     ]
-  }
+  },
+  {
+    "categoryName": "IQ test",
+    "Color": Colors.yellow,
+    "data": [
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+    ]
+  },
+  {
+    "categoryName": "physics test",
+    "Color": Colors.grey,
+    "data": [
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+    ]
+  },
+  {
+    "categoryName": "Mathematic test",
+    "Color": Color.fromARGB(255, 199, 13, 155),
+    "data": [
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+      {
+        "question": "how many player in football team",
+        "answer": [
+          {"ans": "9", "Score": 0},
+          {"ans": "10", "Score": 0},
+          {"ans": "11", "Score": 1},
+          {"ans": "12", "Score": 0},
+        ]
+      },
+      {
+        "question": "who is the first clup won the Champions League",
+        "answer": [
+          {"ans": "Ac milan", "Score": 0},
+          {"ans": "FC porto", "Score": 0},
+          {"ans": "Barcelona", "Score": 0},
+          {"ans": "Real Madrid", "Score": 1},
+        ]
+      },
+    ]
+  },
 ];
+
+TextEditingController userNameControler = TextEditingController();

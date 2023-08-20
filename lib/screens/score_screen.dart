@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:mohamed_iti823/Global/quiz_question.dart';
 import 'package:mohamed_iti823/screens/openning_screen.dart';
 
 class ScoreScreen extends StatelessWidget {
-  const ScoreScreen({super.key});
+  final int totalScore;
+  final int totalNumOfQuistion;
+  ScoreScreen(
+      {super.key, required this.totalScore, required this.totalNumOfQuistion});
 
   @override
   Widget build(BuildContext context) {
@@ -24,12 +28,12 @@ class ScoreScreen extends StatelessWidget {
                   TextButton(
                       onPressed: () {},
                       child: Text(
-                        "mohamed",
+                        "${userNameControler.text}",
                         style: TextStyle(fontSize: 18),
                       ))
                 ],
               ),
-              Text("Your Score is 6 / 10",
+              Text("Your Score is ${totalScore}/${totalNumOfQuistion}",
                   style: TextStyle(
                       fontSize: 26,
                       fontWeight: FontWeight.bold,
