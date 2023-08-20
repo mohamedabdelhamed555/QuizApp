@@ -6,8 +6,22 @@ import 'package:mohamed_iti823/screens/quiz_screen.dart';
 class CategoryContainer extends StatelessWidget {
   final int? index;
   CategoryContainer({super.key, this.index});
-  List quizzText = ["sport quiz", "cemecal quiz", "history quiz"];
-  List quizzColor = [Colors.blue, Colors.green, Colors.red];
+  List quizzText = [
+    "sport quiz",
+    "cemecal quiz",
+    "history quiz",
+    "IQ quiz",
+    "physics quiz",
+    "Mathematic quiz"
+  ];
+  List quizzColor = [
+    Colors.blue,
+    Colors.green,
+    Colors.red,
+    Colors.yellow,
+    Colors.grey,
+    Color.fromARGB(255, 199, 13, 155),
+  ];
   @override
   Widget build(BuildContext context) {
     return Expanded(

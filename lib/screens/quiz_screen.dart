@@ -51,8 +51,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       children: [
                         Text(
                           widget.categoryMap["data"][index]["question"],
-                          style: TextStyle(
-                              fontSize: 22, color: widget.categoryMap["Color"]),
+                          style: TextStyle(fontSize: 22, color: Colors.black),
                         ),
                       ],
                     ),
