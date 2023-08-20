@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mohamed_iti823/screens/Cat_Screen.dart';
 
 import 'package:mohamed_iti823/screens/login_screen.dart';
+import 'package:mohamed_iti823/screens/quiz_screen.dart';
 
 void main() {
   runApp(const quiz_app());
@@ -13,7 +15,7 @@ class quiz_app extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: CatScreen(),
     );
   }
 }
