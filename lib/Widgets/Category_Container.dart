@@ -1,8 +1,8 @@
-// ignore_for_file: must_be_immutable
-
 import 'package:flutter/material.dart';
+import 'package:mohamed_iti823/Global/quiz_question.dart';
 import 'package:mohamed_iti823/screens/quiz_screen.dart';
 
+// ignore: must_be_immutable
 class CategoryContainer extends StatelessWidget {
   final int? index;
   CategoryContainer({super.key, this.index});
@@ -16,7 +16,8 @@ class CategoryContainer extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute<void>(
-              builder: (BuildContext context) => const QuizScreen(),
+              builder: (BuildContext context) =>
+                  QuizScreen(categoryMap: dataList[index!]),
             ),
           );
         },
