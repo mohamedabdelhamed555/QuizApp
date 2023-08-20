@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mohamed_iti823/Global/quiz_question.dart';
 import 'package:mohamed_iti823/screens/Cat_Screen.dart';
 
 // ignore: must_be_immutable
@@ -48,6 +49,7 @@ class LoginScreen extends StatelessWidget {
                 height: 16,
               ),
               TextFormField(
+                controller: userNameControler,
                 validator: (value) {
                   if (value!.isEmpty) {
                     return ("the User name must not be empty");

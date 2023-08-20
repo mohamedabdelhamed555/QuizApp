@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mohamed_iti823/Global/quiz_question.dart';
 import 'package:mohamed_iti823/screens/score_screen.dart';
 
 class QuizScreen extends StatefulWidget {
@@ -11,6 +12,7 @@ class QuizScreen extends StatefulWidget {
 
 class _QuizScreenState extends State<QuizScreen> {
   int index = 0;
+  int totalScore = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -73,8 +75,11 @@ class _QuizScreenState extends State<QuizScreen> {
                             widget.categoryMap["Color"]),
                       ),
                       onPressed: () {
-                        if (index <
-                            (widget.categoryMap["data"] as List).length - 1) {
+                        totalScore = totalScore +
+                            widget.categoryMap["data"][index]["answer"][i]
+                                ["Score"] as int;
+                        if (index + 1 <
+                            (widget.categoryMap["data"] as List).length) {
                           setState(() {
                             index++;
                           });
@@ -82,8 +87,10 @@ class _QuizScreenState extends State<QuizScreen> {
                           Navigator.pushReplacement(
                             context,
                             MaterialPageRoute<void>(
-                              builder: (BuildContext context) =>
-                                  const ScoreScreen(),
+                              builder: (BuildContext context) => ScoreScreen(
+                                totalScore: totalScore,
+                                totalNumOfQuistion: index + 1,
+                              ),
                             ),
                           );
                         }
