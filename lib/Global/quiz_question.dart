@@ -102,7 +102,7 @@ List dataList = [
     ]
   },
   {
-    "categoryName": "Chemistry  test",
+    "categoryName": "Chemistry test",
     "Color": Colors.green,
     "data": [
       {
