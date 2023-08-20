@@ -25,7 +25,7 @@ class _QuizScreenState extends State<QuizScreen> {
             Text(
                 "${index + 1}/ ${(widget.categoryMap["data"] as List).length}"),
             SizedBox(
-              width: MediaQuery.of(context).size.width * 1 / 3,
+              width: MediaQuery.of(context).size.width * 0.2,
             ),
             Text(widget.categoryMap["categoryName"])
           ],

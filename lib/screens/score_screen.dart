@@ -14,6 +14,12 @@ class ScoreScreen extends StatefulWidget {
 }
 
 class _ScoreScreenState extends State<ScoreScreen> {
+  // @override
+  // void dispose() {
+  //   userNameControler.dispose(); // Clear the TextEditingController
+  //   super.dispose();
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,10 +71,4 @@ class _ScoreScreenState extends State<ScoreScreen> {
       ),
     );
   }
-
-  // @override
-  // void dispose() {
-  //   userNameControler.dispose(); // Clear the TextEditingController
-  //   super.dispose();
-  // }
 }
