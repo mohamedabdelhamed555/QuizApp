@@ -53,7 +53,7 @@ class LoginScreen extends StatelessWidget {
                 validator: (value) {
                   if (value!.isEmpty) {
                     return ("the User name must not be empty");
-                  } else if (value.length < 8) {
+                  } else if (value.length < 6) {
                     return ("User Name must be graterThan 8 Characters");
                   } else if (value[0].toUpperCase() != value[0]) {
                     return 'First character should be uppercase';
