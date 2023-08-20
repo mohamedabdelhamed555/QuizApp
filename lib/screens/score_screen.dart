@@ -3,12 +3,17 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:mohamed_iti823/Global/quiz_question.dart';
 import 'package:mohamed_iti823/screens/openning_screen.dart';
 
-class ScoreScreen extends StatelessWidget {
+class ScoreScreen extends StatefulWidget {
   final int totalScore;
   final int totalNumOfQuistion;
   ScoreScreen(
       {super.key, required this.totalScore, required this.totalNumOfQuistion});
 
+  @override
+  State<ScoreScreen> createState() => _ScoreScreenState();
+}
+
+class _ScoreScreenState extends State<ScoreScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +38,8 @@ class ScoreScreen extends StatelessWidget {
                       ))
                 ],
               ),
-              Text("Your Score is ${totalScore}/${totalNumOfQuistion}",
+              Text(
+                  "Your Score is ${widget.totalScore}/${widget.totalNumOfQuistion}",
                   style: TextStyle(
                       fontSize: 26,
                       fontWeight: FontWeight.bold,
@@ -59,4 +65,10 @@ class ScoreScreen extends StatelessWidget {
       ),
     );
   }
+
+  // @override
+  // void dispose() {
+  //   userNameControler.dispose(); // Clear the TextEditingController
+  //   super.dispose();
+  // }
 }

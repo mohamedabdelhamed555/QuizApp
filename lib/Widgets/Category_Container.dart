@@ -8,7 +8,7 @@ class CategoryContainer extends StatelessWidget {
   CategoryContainer({super.key, this.index});
   List quizzText = [
     "sport quiz",
-    "cemecal quiz",
+    "Chemistry quiz",
     "history quiz",
     "IQ quiz",
     "physics quiz",

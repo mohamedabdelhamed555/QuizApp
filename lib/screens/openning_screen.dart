@@ -51,36 +51,28 @@ class openningScreen extends StatelessWidget {
             const Spacer(
               flex: 1,
             ),
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: Container(
+                color: Colors.green,
+                width: 420,
+                height: 30,
+                child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) => LoginScreen(),
+                        ),
+                      );
+                    },
+                    child: const Text(
+                      "start",
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    )),
+              ),
+            )
           ],
-        ),
-      ),
-      floatingActionButton: Padding(
-        padding: const EdgeInsets.only(right: 20, left: 12),
-        child: Container(
-          color: Colors.green,
-          width: 420,
-          height: 30,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              FloatingActionButton(
-                  backgroundColor: Colors.green,
-                  shape: const BeveledRectangleBorder(
-                      borderRadius: BorderRadius.zero),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute<void>(
-                        builder: (BuildContext context) => LoginScreen(),
-                      ),
-                    );
-                  },
-                  child: const Text(
-                    "start",
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  )),
-            ],
-          ),
         ),
       ),
     );
