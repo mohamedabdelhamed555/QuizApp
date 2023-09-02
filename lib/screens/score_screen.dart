@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:mohamed_iti823/Global/quiz_question.dart';
@@ -8,18 +10,13 @@ class ScoreScreen extends StatefulWidget {
   final int totalNumOfQuistion;
   ScoreScreen(
       {super.key, required this.totalScore, required this.totalNumOfQuistion});
-
+  StreamController? myStream;
+  Timer? myTimer;
   @override
   State<ScoreScreen> createState() => _ScoreScreenState();
 }
 
 class _ScoreScreenState extends State<ScoreScreen> {
-  // @override
-  // void dispose() {
-  //   userNameControler.dispose(); // Clear the TextEditingController
-  //   super.dispose();
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,5 +67,14 @@ class _ScoreScreenState extends State<ScoreScreen> {
         ],
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    // Clear the TextEditingController
+    super.dispose();
+    userNameControler.clear();
+    widget.myStream!.close();
+    widget.myTimer!.cancel();
   }
 }
