@@ -1,8 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:mohamed_iti823/screens/login_screen.dart';
 
-class openningScreen extends StatelessWidget {
+class openningScreen extends StatefulWidget {
   const openningScreen({super.key});
+
+  @override
+  State<openningScreen> createState() => _openningScreenState();
+}
+
+class _openningScreenState extends State<openningScreen>
+    with TickerProviderStateMixin {
+  late AnimationController _slidelogocontroller;
+  late AnimationController _fadetextcontroller;
+  @override
+  void initState() {
+    super.initState();
+    _slidelogocontroller =
+        AnimationController(vsync: this, duration: Duration(seconds: 4));
+
+    _fadetextcontroller =
+        AnimationController(vsync: this, duration: Duration(seconds: 4));
+    _slidelogocontroller.forward();
+    _fadetextcontroller.forward();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,28 +44,42 @@ class openningScreen extends StatelessWidget {
             const Spacer(
               flex: 1,
             ),
-            Image.asset(
-              "image/istockphoto-1390274690-612x612.jpg",
-              width: 100,
-              height: 120,
-            ),
-            const Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Text(
-                "ITI Quiz app",
-                style: TextStyle(
-                  fontSize: 24,
-                  color: Colors.yellow,
-                  fontFamily: "Dancing Script",
-                ),
+            SlideTransition(
+              position: Tween<Offset>(begin: Offset(0, -2), end: Offset(0, 0))
+                  .animate(_slidelogocontroller),
+              child: Image.asset(
+                "image/istockphoto-1390274690-612x612.jpg",
+                width: 100,
+                height: 120,
               ),
             ),
-            const Text(
-              "We Are Creative, enjoy our app",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Dancing Script",
+            SizedBox(
+              height: 20,
+            ),
+            FadeTransition(
+              opacity: _fadetextcontroller,
+              child: Column(
+                children: [
+                  Text(
+                    "ITI Quiz app",
+                    style: TextStyle(
+                      fontSize: 28,
+                      color: Colors.white,
+                      fontFamily: "Dancing Script",
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  const Text(
+                    "We Are Creative, enjoy our app",
+                    style: TextStyle(
+                      fontSize: 28,
+                      color: Colors.white,
+                      fontFamily: "Dancing Script",
+                    ),
+                  ),
+                ],
               ),
             ),
             const Spacer(

@@ -3,12 +3,34 @@ import 'package:mohamed_iti823/Global/quiz_question.dart';
 import 'package:mohamed_iti823/screens/Cat_Screen.dart';
 
 // ignore: must_be_immutable
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
   LoginScreen({super.key});
+
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen>
+    with TickerProviderStateMixin {
+  late AnimationController _logocontroller;
+
   final _formKey = GlobalKey<FormState>();
+
   RegExp regex =
       RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$');
+
   RegExp regExp = new RegExp(r'^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$');
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _logocontroller =
+        AnimationController(vsync: this, duration: Duration(seconds: 3));
+
+    _logocontroller.forward();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,16 +46,21 @@ class LoginScreen extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.28,
                   width: MediaQuery.of(context).size.width,
                   child: Center(
-                    child: Image.asset(
-                      "image/istockphoto-1390274690-612x612.jpg",
-                      height: 100,
+                    child: SlideTransition(
+                      position:
+                          Tween<Offset>(begin: Offset(0, -1), end: Offset(0, 0))
+                              .animate(_logocontroller),
+                      child: Image.asset(
+                        "image/istockphoto-1390274690-612x612.jpg",
+                        height: 100,
+                      ),
                     ),
                   ),
                 ),
               ),
               Container(
                 padding: EdgeInsets.all(20),
-                height: MediaQuery.of(context).size.height * 0.75, // width: 50,
+                height: MediaQuery.of(context).size.height * 0.81, // width: 50,
                 width: double.infinity,
                 decoration: const BoxDecoration(
                     color: Color.fromARGB(255, 226, 216, 216),
